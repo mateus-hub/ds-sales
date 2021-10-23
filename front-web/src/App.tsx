@@ -1,9 +1,11 @@
-import './App.css';
 import Filter from './components/filter';
 import Header from './components/header';
 import PieChartCard from './components/pie-chart-card';
 import SalesByDate from './components/sales-by-date';
 import SalesSummary from './components/sales-summary';
+import SalesTable from './components/sales-table';
+
+import './App.css';
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
             series={[20, 50, 30]}
           />
         </div>
+        <SalesTable />
       </div>
     </>
   );
